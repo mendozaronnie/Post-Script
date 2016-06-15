@@ -1,22 +1,5 @@
-Material Design for Bootstrap
+Post Script - Empowering Youth
 
-Documentation:
-http://mdbootstrap.com/
+The mission of Post Script is to empower future leaders to engage in local and global issues and take an active role in creating lasting impact.
 
-Getting started:
-http://mdbootstrap.com/getting-started/
-
-Tutorials:
-http://mdbootstrap.com/bootstrap-tutorial/
-
-Templates:
-http://mdbootstrap.com/templates/
-
-License:
-http://mdbootstrap.com/license/
-
-Support:
-http://mdbootstrap.com/forums/forum/support/
-
-Contact:
-office@mdbootstrap.com
+I like the future leaders and I like the first ones focus on end vision rather than the method to get there. 
