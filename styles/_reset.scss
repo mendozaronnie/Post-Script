@@ -24,6 +24,10 @@ a, a:hover, a:active, a:visited {
   text-decoration: inherit;
 }
 
+button {
+  border: inherit;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {

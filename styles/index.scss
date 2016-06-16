@@ -2,6 +2,7 @@
 @import 'header';
 @import 'colors';
 @import 'utils';
+@import 'shared';
 
 $banner-tint: rgba($black, .4);
 
@@ -10,10 +11,44 @@ $banner-tint: rgba($black, .4);
 }
 
 .landing-banner {
+  position: relative;
   width: 100%;
   height: 100vh;
   // use the gradient hack to tint image
   background: linear-gradient($banner-tint, $banner-tint), url('../images/main-banner.jpg') center no-repeat;
   background-size: cover;
+}
+
+.landing-banner-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+
+  .banner-heading,
+  .banner-subheading {
+    color: $white;
+    text-shadow: 0 0 10px rgba($black, .5);
+    font-family: 'Nothing You Could Do', cursive;
+  }
+
+  .banner-heading {
+    text-transform: uppercase;
+    font-size: 100px;
+  }
+
+  .banner-subheading {
+    line-height: 36px;
+    width: 60%;
+    margin: 100px auto;
+    font-size: 30px;
+    font-family: 'Nothing You Could Do', cursive;
+  }
+
+  .landing-banner-button {
+    font-size: 26px;
+    padding: 10px 34px;
+  }
 }
 
