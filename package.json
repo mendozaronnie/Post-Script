@@ -1,0 +1,30 @@
+{
+  "name": "postscript",
+  "version": "1.0.0",
+  "description": "Empowering youth",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbonbonm/Post-Script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbonbonm/Post-Script/issues"
+  },
+  "homepage": "https://github.com/rbonbonm/Post-Script#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-hb": "^5.1.0",
+    "gulp-mustache-plus": "^1.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-tap": "^0.1.3",
+    "q": "^1.4.1"
+  }
+}
