@@ -71,6 +71,17 @@ $banner-tint: rgba($black, .4);
   font-size: 50px;
   margin-bottom: 30px;
   font-weight: 800;
+  position: relative;
+  padding-bottom: 30px;
+
+  &:after {
+    content: '';
+    width: 20%;
+    border-bottom: 2px solid rgba($postscript-1, .5);
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+  }
 }
 
 .landing-section-subheader {

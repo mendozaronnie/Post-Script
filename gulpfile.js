@@ -3,6 +3,8 @@ const babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const mustache = require("gulp-mustache-plus");
 const babelRegister = require('babel/register');
+const handlebars = require('gulp-compile-handlebars');
+const rename = require('gulp-rename');
 
 const distDir = './dist/';
 const cssDir = 'styles';
@@ -24,12 +26,11 @@ gulp.task('js', () => {
 });
 
 gulp.task('html', () => {
-  return gulp.src('./templates/*.mustache')
-    .pipe(mustache({}, {}, {
-      header: './templates/partials/header.mustache',
-      footer: './templates/partials/footer.mustache',
-      icons: './templates/partials/icons.mustache'
+  return gulp.src('./templates/*.hbs')
+    .pipe(handlebars({}, {
+      batch: ['./templates/partials/']
     }))
+    .pipe(rename((path) => path.extname = '.html'))
     .pipe(gulp.dest(`${distDir}`));
 });
 
@@ -38,7 +39,7 @@ gulp.task('sass:watch', function() {
 });
 
 gulp.task('html:watch', function() {
-  gulp.watch('./templates/**/*.mustache', ['html']);
+  gulp.watch('./templates/**/*.hbs', ['html']);
 });
 
 gulp.task('js:watch', () => {

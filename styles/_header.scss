@@ -56,7 +56,7 @@ $nav-height: 30px;
     }
 
     &:hover,
-    &:active,
+    &:focus,
     &.current {
       border-bottom: 3px solid $postscript-4;
       color: rgba($white, 1);
