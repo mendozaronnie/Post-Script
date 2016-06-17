@@ -1,20 +1,29 @@
 @import 'fonts';
 @import 'colors';
 
+$header-height: 80px;
+$logo-size: 40px;
+$nav-height: 30px;
+
 .main-header {
   box-sizing: border-box;
-  height: 100px;
+  height: $header-height;
   width: 100%;
   position: fixed;
   padding: 0 20%;
   font-family: Mada;
   z-index: 1000;
+  transition: background-color .3s;
+
+  &.solid {
+    background-color: rgba($black, .7);
+  }
 }
 
 .main-logo {
   float: left;
-  height: 40px;
-  margin: 30px 0;
+  height: $logo-size;
+  margin: ($header-height - $logo-size)/2 0;
   opacity: .8;
   transition: opacity .3s;
 
@@ -29,9 +38,9 @@
 }
 
 .nav-list {
-  height: 30px;
-  line-height: 30px;
-  margin-top: 35px;
+  height: $nav-height;
+  line-height: $nav-height;
+  margin-top: ($header-height - $nav-height)/2;
 
 
   .nav-list-el {
@@ -47,8 +56,9 @@
     }
 
     &:hover,
+    &:active,
     &.current {
-      border-bottom: 2px solid $white;
+      border-bottom: 3px solid $white;
       color: rgba($white, 1);
     }
   }

@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const mustache = require("gulp-mustache-plus");
+const babelRegister = require('babel/register');
 
 const distDir = './dist/';
 const cssDir = 'styles';
@@ -16,16 +17,17 @@ gulp.task('sass', function() {
 gulp.task('js', () => {
   return gulp.src('scripts/**/*.js')
     .pipe(babel({
-      presets: ['es2015']
+      presets: ['es2015'],
+      plugins: ['transform-es2015-modules-amd']
     }))
-    .pipe(gulp.dest(`${distDir}${jsDir}`));
+    .pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('html', () => {
-  return gulp.src("./templates/*.mustache")
+  return gulp.src('./templates/*.mustache')
     .pipe(mustache({}, {}, {
-      'header': './templates/partials/header.mustache',
-      'footer': './templates/partials/footer.mustache'
+      header: './templates/partials/header.mustache',
+      footer: './templates/partials/footer.mustache'
     }))
     .pipe(gulp.dest(`${distDir}`));
 });

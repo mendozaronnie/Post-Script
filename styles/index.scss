@@ -52,3 +52,30 @@ $banner-tint: rgba($black, .4);
   }
 }
 
+.landing-section {
+  padding: 50px 0;
+}
+
+.landing-section-header,
+.landing-section-subheader {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Open Sans';
+
+}
+
+.landing-section-header {
+  color: $postscript-1;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.landing-section-subheader {
+  font-size: 22px;
+  line-height: 32px;
+  color: $grey-1;
+}
+
