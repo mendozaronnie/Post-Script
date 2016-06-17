@@ -7,6 +7,9 @@
   <title></title>
 </head>
 <body data-js="index">
+<!--We render the icon partial on each page and use icons via svg+use-->
+{{> icons}}
+
 {{> header}}
 
 <main class="landing-container">
@@ -25,10 +28,32 @@
 
   <section class="landing-section">
     <h2 class="landing-section-header">Let the youth be heard</h2>
+
     <h3 class="landing-section-subheader">
       In society, the youth are often forgotten, but as a part of Post Script, you
       will be recognized. Post Script will provide opportunities for students’ ideas and ambitions to be heard.
+      See how you can help.
     </h3>
+    <ul class="landing-ways-to-help-list clearfix">
+      <li class="landing-way-to-help">
+        <svg class="way-to-help-icon">
+          <use xlink:href="#glasses"></use>
+        </svg>
+        <button class="way-to-help-button solid-button">Learn</button>
+      </li>
+      <li class="landing-way-to-help">
+        <svg class="way-to-help-icon">
+          <use xlink:href="#money"></use>
+        </svg>
+        <button class="way-to-help-button solid-button">Donate</button>
+      </li>
+      <li class="landing-way-to-help">
+        <svg class="way-to-help-icon">
+          <use xlink:href="#megaphone"></use>
+        </svg>
+        <button class="way-to-help-button solid-button">Help</button>
+      </li>
+    </ul>
   </section>
 </main>
 

@@ -27,7 +27,8 @@ gulp.task('html', () => {
   return gulp.src('./templates/*.mustache')
     .pipe(mustache({}, {}, {
       header: './templates/partials/header.mustache',
-      footer: './templates/partials/footer.mustache'
+      footer: './templates/partials/footer.mustache',
+      icons: './templates/partials/icons.mustache'
     }))
     .pipe(gulp.dest(`${distDir}`));
 });

@@ -79,3 +79,33 @@ $banner-tint: rgba($black, .4);
   color: $grey-1;
 }
 
+.landing-ways-to-help-list {
+  margin: 50px auto 0;
+  width: 900px;
+
+  .landing-way-to-help {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+  }
+
+  .way-to-help-icon {
+    display: block;
+    margin: 0 auto;
+    fill: $postscript-1;
+    width: 180px;
+    height: 180px;
+  }
+
+  .way-to-help-button {
+    background-color: lighten($postscript-1, 10);
+    border: none;
+    display: block;
+    width: 60%;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 40px auto;
+    padding: 8px 26px;
+  }
+}
+
