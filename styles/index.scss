@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'media';
 
 $banner-tint: rgba($black, .4);
 
@@ -10,6 +11,7 @@ $banner-tint: rgba($black, .4);
   position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 600px;
   // use the gradient hack to tint image
   background: linear-gradient($banner-tint, $banner-tint), url('../images/main-banner.jpg') center no-repeat;
   background-size: cover;
@@ -31,19 +33,19 @@ $banner-tint: rgba($black, .4);
 
   .banner-heading {
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 6em;
   }
 
   .banner-subheading {
-    line-height: 36px;
+    line-height: 1.3;
     width: 60%;
     margin: 100px auto;
-    font-size: 30px;
+    font-size: 2em;
     font-family: 'Nothing You Could Do', cursive;
   }
 
   .landing-banner-button {
-    font-size: 26px;
+    font-size: 1.6em;
     padding: 10px 34px;
   }
 }
@@ -61,34 +63,9 @@ $banner-tint: rgba($black, .4);
 
 }
 
-.landing-section-header {
-  color: $postscript-1;
-  text-transform: uppercase;
-  font-size: 50px;
-  margin-bottom: 30px;
-  font-weight: 800;
-  position: relative;
-  padding-bottom: 30px;
-
-  &:after {
-    content: '';
-    width: 20%;
-    border-bottom: 2px solid rgba($postscript-1, .5);
-    position: absolute;
-    left: 40%;
-    bottom: 0;
-  }
-}
-
-.landing-section-subheader {
-  font-size: 22px;
-  line-height: 32px;
-  color: $grey-1;
-}
-
 .landing-ways-to-help-list {
   margin: 50px auto 0;
-  width: 900px;
+  width: 100%;
 
   .landing-way-to-help {
     box-sizing: border-box;
@@ -100,8 +77,7 @@ $banner-tint: rgba($black, .4);
     display: block;
     margin: 0 auto;
     fill: $postscript-1;
-    width: 180px;
-    height: 180px;
+    width:80%;
   }
 
   .way-to-help-button {
@@ -116,3 +92,14 @@ $banner-tint: rgba($black, .4);
   }
 }
 
+@include tablet {
+  body {
+    font-size: 80%;
+  }
+}
+
+@include phone {
+  body {
+    font-size: 40%;
+  }
+}
