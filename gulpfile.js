@@ -1,10 +1,9 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const sass = require('gulp-sass');
-const mustache = require("gulp-mustache-plus");
-const babelRegister = require('babel/register');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 
 const distDir = './dist/';
 const cssDir = 'styles';
@@ -13,6 +12,7 @@ const jsDir = 'scripts';
 gulp.task('sass', function() {
   return gulp.src('./styles/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('all.css'))
     .pipe(gulp.dest(`${distDir}${cssDir}`));
 });
 
@@ -46,7 +46,9 @@ gulp.task('js:watch', () => {
   gulp.watch('./scripts/**/*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'html', 'js'], () => {});
+gulp.task('default', ['sass', 'html', 'js'], () => {
+});
 
-gulp.task('watch', ['sass:watch', 'html:watch', 'js:watch'], () => {});
+gulp.task('watch', ['sass:watch', 'html:watch', 'js:watch'], () => {
+});
 

@@ -1,22 +1,56 @@
-<header class="main-header clearfix">
+{{#if solid}}
+  <header class="main-header clearfix solid">
+{{else}}
+  <header class="main-header clearfix">
+{{/if}}
   <img class="main-logo" src="./images/logo-white.png">
   <nav class="main-nav">
     <ul class="nav-list clearfix">
-      <li class="nav-list-el current">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-list-el">
-        <a class="nav-link" href="#">Our Mission</a>
-      </li>
-      <li class="nav-list-el">
-        <a class="nav-link" href="#">Our Work</a>
-      </li>
-      <li class="nav-list-el">
-        <a class="nav-link" href="#">Our Team</a>
-      </li>
-      <li class="nav-list-el">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
+      {{#if home}}
+        <li class="nav-list-el current">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+      {{else}}
+        <li class="nav-list-el">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+      {{/if}}
+      {{#if mission}}
+        <li class="nav-list-el current">
+          <a class="nav-link" href="#">Our Mission</a>
+        </li>
+      {{else}}
+        <li class="nav-list-el">
+          <a class="nav-link" href="./mission.html">Our Mission</a>
+        </li>
+      {{/if}}
+      {{#if work}}
+        <li class="nav-list-el current">
+          <a class="nav-link" href="#">Our Work</a>
+        </li>
+      {{else}}
+        <li class="nav-list-el">
+          <a class="nav-link" href="./work.html">Our Work</a>
+        </li>
+      {{/if}}
+      {{#if team}}
+        <li class="nav-list-el current">
+          <a class="nav-link" href="#">Our Team</a>
+        </li>
+      {{else}}
+        <li class="nav-list-el">
+          <a class="nav-link" href="./team.html">Our Team</a>
+        </li>
+      {{/if}}
+      {{#if contact}}
+        <li class="nav-list-el current">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      {{else}}
+        <li class="nav-list-el">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      {{/if}}
     </ul>
   </nav>
 </header>
