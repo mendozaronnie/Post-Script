@@ -1,0 +1,134 @@
+@import 'colors';
+
+$banner-tint: rgba($black, .35);
+
+@mixin perspective($value) {
+  -webkit-perspective: $value;
+     -moz-perspective: $value;
+      -ms-perspective: $value;
+          perspective: $value;
+}
+@mixin flip($value) {
+  -webkit-transform: rotateY($value);
+     -moz-transform: rotateY($value);
+      -ms-transform: rotateY($value);
+          transform: rotateY($value);
+}
+
+.team-banner-container {
+    background: linear-gradient($banner-tint, $banner-tint), url('../../img/team-banner.jpg') center no-repeat;
+    width: 100%;
+    height: 90vh;
+    background-size: cover
+    
+}
+
+.team-banner-content{
+    
+/*put team banner contents here */
+}
+
+//////////////////////////////////////
+
+.team-members-container {
+    width: 100%;
+    padding-bottom: 30px;
+    
+}
+
+.team-members-desc {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: $grey-1;
+    
+}
+
+
+/////////////////////////////////////
+
+@media screen and (min-width: 50em) {
+  .team-members-post {
+    width: calc(25% - 6px);
+  }
+}
+
+.team-members-post-container {
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+}
+
+.team-members-post {
+    display: inline-block;
+    margin-bottom: 50px;
+    max-width: 245px;
+
+}
+
+.team-members-figure {
+    margin: 0;
+    overflow: hidden;
+    @include perspective(100);
+
+}
+
+.team-members-pic {
+    border: none;
+    max-width: 245px;
+    height: auto;
+    display: block;
+    transition: transform .2s ease-in-out;
+    
+    &:hover {
+        @include flip(180deg);
+        
+    }
+}
+
+.flip{
+    -webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden; 
+    display: inline; 
+	position: absolute;
+	top: 50%;
+}
+
+.front {
+	background: url(../img/little_ronnie.jpg) 0 0 no-repeat;
+}
+
+.back {
+    @include flip(180deg);
+    background: url(../img/old_ronnie.jpg) 0 0 no-repeat;
+	
+}
+
+.team-members-caption {
+    margin-top: 20px;
+}
