@@ -1,6 +1,6 @@
 @import 'colors';
 
-$footer-height: 100px;
+$footer-height: 120px;
 $icon-height: 40px;
 
 .main-footer {
@@ -38,6 +38,13 @@ $icon-height: 40px;
       height: 100%;
       width: 100%;
       fill: $grey-0;
+      transition: fill .3s;
+    }
+
+    .footer-social-link:hover {
+      svg {
+        fill: lighten($grey-0, 30);
+      }
     }
   }
 }
