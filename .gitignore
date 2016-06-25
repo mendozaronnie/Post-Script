@@ -1,6 +1,9 @@
 .idea/*
 node_modules
-dist
+dist/*
 **/.DS_Store
+!dist/images/
+
+!dist/scripts/
+dist/scripts/*
 !dist/scripts/require.js
-!dist/images
