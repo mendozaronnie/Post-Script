@@ -8,6 +8,8 @@ const $nav = document.querySelector('.main-nav');
 const headerFade = new HeaderFade($header);
 const navigation = new Navigation($hamburger, $nav);
 
+console.log('hello');
+
 headerFade.init();
 navigation.init();
 
