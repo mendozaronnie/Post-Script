@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
 
 const distDir = './dist/';
 const cssDir = 'styles';
@@ -13,6 +14,10 @@ gulp.task('sass', function() {
   return gulp.src('./styles/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('all.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 3 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest(`${distDir}${cssDir}`));
 });
 

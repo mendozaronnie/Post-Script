@@ -14,24 +14,29 @@ $solid-nav-opacity: .75;
   position: fixed;
   font-family: Mada;
   z-index: 1000;
-  transition: background-color .3s;
+  transition: background-color .3s ease-out;
 
   &.solid {
     background-color: rgba($black, $solid-nav-opacity);
   }
 }
 
-.main-logo {
+.main-logo-link {
+  display: block;
   float: left;
   height: $logo-size;
   margin: ($header-height - $logo-size)/2 0;
   opacity: .8;
-  transition: opacity .3s;
+  transition: opacity .3s ease-out;
 
   &:hover,
-  &:active {
+  &:focus {
     opacity: 1;
   }
+}
+
+.main-logo {
+  height: 100%;
 }
 
 .main-nav {
@@ -70,7 +75,7 @@ $solid-nav-opacity: .75;
   .nav-list-el {
     float: left;
     margin-left: 54px;
-    transition: border-bottom .1s, color .2s;
+    transition: border-bottom .1s ease-out, color .2s ease-out;
     font-size: 18px;
 
     &:first-child {
@@ -127,8 +132,6 @@ $solid-nav-opacity: .75;
   }
 
   body.nav-open {
-    //transform: translateX(-350px);
-
     .main-nav {
       transform: translateX(0);
     }
