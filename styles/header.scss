@@ -97,14 +97,16 @@ $solid-nav-opacity: .75;
 
   .main-nav {
     box-shadow: -1px 0 6px rgba($grey-2, .4);
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 350px;
+    max-width: 100%;
     background-color: $grey-1;
     color: $white;
+    transform: translateX(100%);
+    transition: transform 250ms ease-out;
 
     .nav-list {
       margin-top: 30px;
@@ -125,8 +127,10 @@ $solid-nav-opacity: .75;
   }
 
   body.nav-open {
+    //transform: translateX(-350px);
+
     .main-nav {
-      display: block;
+      transform: translateX(0);
     }
   }
 }
