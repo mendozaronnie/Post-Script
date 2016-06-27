@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head title="Conact"}}
+<body>
+<!--We render the icon partial on each page and use icons via svg+use-->
+{{> icons}}
+{{> header contact="true"}}
+<main class="mission-container">
+  <section class="section-outer-container">
+    <div class="section-inner-container">
+      <h1 class="section-header">Send us a message.</h1>
+
+      <div class="section-content">
+        <p class="section-paragraph center-text">
+          Feel free to reach out to us and we'll get back as soon as we can!
+        </p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+      </form>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

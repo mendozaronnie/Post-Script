@@ -6,6 +6,10 @@
   clear: both;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .solid-button {
   color: $white;
   background-color: $postscript-1;
@@ -22,7 +26,7 @@
 
 .section-outer-container {
   width: 100%;
-  padding: 120px 0;
+  padding: 6em 0;
   background-color: $postscript-1;
 
   .section-inner-container {
@@ -38,7 +42,7 @@
     font-family: 'Nothing You Could Do', cursive;
     font-weight: bold;
     color: $white;
-    font-size: 50px;
+    font-size: 3.2em;
     position: relative;
     padding-bottom: 40px;
     letter-spacing: 5px;
@@ -56,11 +60,11 @@
 
   .section-content {
     font-family: 'Open Sans';
-    font-size: 26px;
+    font-size: 1.5em;
     font-weight: 300;
     color: $white;
     width: 100%;
-    line-height: 38px;
+    line-height: 1.7;
 
     .section-paragraph {
       margin-top: 30px;

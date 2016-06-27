@@ -21,7 +21,8 @@ $banner-tint: rgba($black, .4);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
+  width: 80%;
+  left: 10%;
   text-align: center;
 
   .banner-heading,
@@ -89,17 +90,5 @@ $banner-tint: rgba($black, .4);
     font-size: 22px;
     margin: 40px auto;
     padding: 8px 26px;
-  }
-}
-
-@include tablet {
-  body {
-    font-size: 80%;
-  }
-}
-
-@include phone {
-  body {
-    font-size: 40%;
   }
 }

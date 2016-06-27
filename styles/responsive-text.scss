@@ -1,0 +1,19 @@
+@import 'media';
+
+@include tablet {
+  body {
+    font-size: 80%;
+  }
+}
+
+@include phone {
+  body {
+    font-size: 60%;
+  }
+}
+
+@include small-phone {
+  body {
+    font-size: 45%;
+  }
+}

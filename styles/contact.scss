@@ -1,0 +1,29 @@
+@import 'colors';
+
+.contact-form {
+  width: 80%;
+  margin: 60px auto;
+
+  input, textarea {
+    font-family: 'Open Sans';
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border-radius: 4px;
+    border: 1px solid lighten($grey-0, 10);
+    margin: 20px 0;
+    opacity: .9;
+    color: $grey-1;
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  textarea {
+    height: 10em;
+    line-height: 1.3;
+  }
+}

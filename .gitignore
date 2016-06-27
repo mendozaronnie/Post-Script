@@ -3,7 +3,6 @@ node_modules
 dist/*
 **/.DS_Store
 !dist/images/
-
 !dist/scripts/
 dist/scripts/*
 !dist/scripts/require.js
