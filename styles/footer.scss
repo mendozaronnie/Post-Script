@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'media';
 
 $footer-height: 120px;
 $icon-height: 40px;
@@ -18,7 +19,7 @@ $icon-height: 40px;
 
   .footer-info {
     line-height: $footer-height;
-    font-size: 22px;
+    font-size: 1.4em;
     font-family: 'Nothing You Could Do', cursive;
   }
 
@@ -48,3 +49,21 @@ $icon-height: 40px;
     }
   }
 }
+
+@include phone-and-tablet {
+  .main-footer {
+    height: auto;
+
+    .footer-info,
+    .footer-social-link-list {
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-info {
+      padding-top: 40px;
+      line-height: 1.4;
+    }
+  }
+}
+
