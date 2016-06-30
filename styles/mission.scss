@@ -3,7 +3,7 @@
 $banner-tint: rgba($black, .35);
 
 .mission-banner {
-  height: 750px;
+  height: 46.88em;
   width: 100%;
   background: linear-gradient($banner-tint, $banner-tint), url('../images/mission-banner.jpg') center no-repeat;
   background-size: cover;
@@ -15,8 +15,8 @@ $banner-tint: rgba($black, .35);
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   border-radius: 100%;
-  height: 450px;
-  width: 450px;
+  height: 28.13em;
+  width: 28.13em;
   border: 6px solid rgba($white, .8);
   vertical-align: middle;
 
@@ -34,7 +34,7 @@ $banner-tint: rgba($black, .35);
   }
 
   .mission-banner-heading {
-    font-size: 34px;
+    font-size: 2.13em;
     font-family: 'Nothing You Could Do', cursive;
     color: $white;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ $banner-tint: rgba($black, .35);
     text-transform: uppercase;
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 70px;
+    font-size: 4.38em;
     position: relative;
     padding: 30px 0;
     margin: 30px 0;
