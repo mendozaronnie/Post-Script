@@ -3,7 +3,7 @@
 $banner-tint: rgba($black, .35);
 
 .mission-banner {
-  height: 46.88em;
+  height: 800px;
   width: 100%;
   background: linear-gradient($banner-tint, $banner-tint), url('../images/mission-banner.jpg') center no-repeat;
   background-size: cover;
@@ -11,12 +11,12 @@ $banner-tint: rgba($black, .35);
 
 .mission-banner-content-container {
   position: absolute;
-  top: calc(50% - 50px);
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   border-radius: 100%;
-  height: 28.13em;
-  width: 28.13em;
+  height: 28em;
+  width: 28em;
   border: 6px solid rgba($white, .8);
   vertical-align: middle;
 

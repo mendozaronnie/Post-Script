@@ -3,16 +3,15 @@
 $banner-tint: rgba($black, .35);
 
 .team-banner-container {
-    background: linear-gradient($banner-tint, $banner-tint), url('../images/team-banner.jpg') center no-repeat;
-    width: 100%;
-    height: 90vh;
-    background-size: cover
-    
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/team-banner.jpg') center no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-size: cover
 }
 
-.team-banner-content{
-    
-/*put team banner contents here */
+.team-banner-content {
+
+  /*put team banner contents here */
 }
 
 //////////////////////////////////////
@@ -46,85 +45,84 @@ $banner-tint: rgba($black, .35);
 //}
 
 .team-members-section {
-    height: 100%;
-    background-color: lighten($grey-0, 40);
-    box-sizing: border-box;
-    padding: 1.4em;
+  height: 100%;
+  background-color: lighten($grey-0, 40);
+  box-sizing: border-box;
+  padding: 1.4em;
 }
+
 .team-members-list {
-    display: flex;
-    margin: 0 auto;
-    list-style: none;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .team-members-el {
-    padding: 0.5em;
-    display: flex;
-    min-width: 245px;
-    box-sizing: border-box;
-    margin-top: 1em;
-    background-color: $white;
-    list-style: none;
-    position: relative;
+  padding: 0.5em;
+  display: flex;
+  min-width: 245px;
+  box-sizing: border-box;
+  margin-top: 1em;
+  background-color: $white;
+  list-style: none;
+  position: relative;
 }
 
 .team-members-post {
-    margin-bottom: 1em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
-    h2 {
-        font-family: 'Open Sans';
-        font-size: 1.5em;
-        z-index: 5;
-        margin-bottom: .3em;
-        color: $postscript-6;
+  margin-bottom: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
-    }
-    
-    a {
-        color: $grey-1;
-        font-family: 'Open Sans';
-        font-size: 1.1em;
-        z-index: 5;
-    }
-
-}
-.team-members-pic {
-    display: block;
-    box-shadow: -7px 10px 73px -12px rgba(0,0,0,0.38);
-    max-width: 245px;
-    margin: 0 auto;
-    transition: opacity 0.2s ease-in-out;
-
-    
-}
-.top {
+  h2 {
+    font-family: 'Open Sans';
+    font-size: 1.5em;
     z-index: 5;
-    &:hover {
-        opacity: 0;
-    }
+    margin-bottom: .3em;
+    color: $postscript-6;
+
+  }
+
+  a {
+    color: $grey-1;
+    font-family: 'Open Sans';
+    font-size: 1.1em;
+    z-index: 5;
+  }
+
+}
+
+.team-members-pic {
+  display: block;
+  box-shadow: -7px 10px 73px -12px rgba(0, 0, 0, 0.38);
+  max-width: 245px;
+  margin: 0 auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.top {
+  z-index: 5;
+  &:hover {
+    opacity: 0;
+  }
 }
 
 .bottom {
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 @media screen and (min-width: 1489px) {
-    .team-members-el {
-        flex-basis: 25%;
+  .team-members-el {
+    flex-basis: 25%;
 
-    }
+  }
 }
 
-
-
 .team-members-caption {
-    margin-top: 20px;
+  margin-top: 20px;
 }
