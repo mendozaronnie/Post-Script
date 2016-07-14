@@ -5,6 +5,7 @@ const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
 
 const distDir = './dist/';
 const cssDir = 'styles';
@@ -20,6 +21,12 @@ gulp.task('sass', function() {
     }))
     .pipe(gulp.dest(`${distDir}${cssDir}`));
 });
+
+gulp.task('imgmin', () =>
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
 
 gulp.task('js', () => {
   return gulp.src('scripts/**/*.js')
