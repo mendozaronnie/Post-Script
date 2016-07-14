@@ -1,0 +1,24 @@
+{
+  "nav-links": [
+    {
+      "name": 'Home',
+      "href": 'index'
+    },
+    {
+      "name": 'Our Mission',
+      "href": 'mission'
+    },
+    {
+      "name": 'Our Work',
+      "href": 'work'
+    },
+    {
+      "name": 'Our Team',
+      "href": 'team'
+    },
+    {
+      "name": 'Contact',
+      "href": 'contact'
+    }
+  ]
+}

@@ -33,7 +33,8 @@ gulp.task('js', () => {
 gulp.task('html', () => {
   return gulp.src('./templates/*.hbs')
     .pipe(handlebars({}, {
-      batch: ['./templates/partials/']
+      batch: ['./templates/partials/'],
+      data: ['./templates/data/']
     }))
     .pipe(rename((path) => path.extname = '.html'))
     .pipe(gulp.dest(`${distDir}`));

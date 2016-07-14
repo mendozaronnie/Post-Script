@@ -22,27 +22,29 @@ $icon-height: 40px;
     font-size: 1.4em;
     font-family: 'Nothing You Could Do', cursive;
   }
+}
 
-  .footer-social-link-list {
+.footer-social-link-list {
+  height: $icon-height;
+  margin: ($footer-height - $icon-height)/2 0;
+  text-align: right;
+
+  .footer-social-link-el {
+    display: inline-block;
     height: $icon-height;
-    margin: ($footer-height - $icon-height)/2 0;
-    text-align: right;
+    width: $icon-height;
+    margin-left: 20px;
+  }
 
-    .footer-social-link-el {
-      display: inline-block;
-      height: $icon-height;
-      width: $icon-height;
-      margin-left: 20px;
-    }
+  svg {
+    height: 100%;
+    width: 100%;
+    fill: $grey-0;
+    transition: fill .3s;
+  }
 
-    svg {
-      height: 100%;
-      width: 100%;
-      fill: $grey-0;
-      transition: fill .3s;
-    }
-
-    .footer-social-link:hover {
+  .footer-social-link {
+    &:hover, &:focus {
       svg {
         fill: lighten($grey-0, 30);
       }
