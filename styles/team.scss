@@ -7,9 +7,10 @@ $banner-tint: rgba($black, .35);
   width: 100%;
   height: 90vh;
   background-size: cover
+
 }
 
-.team-banner-content {
+.team-banner-content{
 
   /*put team banner contents here */
 }
@@ -50,7 +51,6 @@ $banner-tint: rgba($black, .35);
   box-sizing: border-box;
   padding: 1.4em;
 }
-
 .team-members-list {
   display: flex;
   margin: 0 auto;
@@ -94,22 +94,15 @@ $banner-tint: rgba($black, .35);
   }
 
 }
-
-.team-members-pic {
-    display: block;
-    box-shadow: -0.43em 0.62em 4.56em -0.75em rgba(0,0,0,0.38);
-    max-width: 245px;
-    margin: 0 auto;
-    transition: opacity 0.2s ease-in-out;
-
 .team-members-pic {
   display: block;
-  box-shadow: -7px 10px 73px -12px rgba(0, 0, 0, 0.38);
+  box-shadow: -0.43em 0.62em 4.56em -0.75em rgba(0,0,0,0.38);
   max-width: 245px;
   margin: 0 auto;
   transition: opacity 0.2s ease-in-out;
-}
 
+
+}
 .top {
   z-index: 5;
   &:hover {
@@ -129,6 +122,8 @@ $banner-tint: rgba($black, .35);
 
   }
 }
+
+
 
 .team-members-caption {
   margin-top: 20px;
