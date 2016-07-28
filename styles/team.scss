@@ -101,20 +101,21 @@ $banner-tint: rgba($black, .35);
   margin: 0 auto;
   transition: opacity 0.2s ease-in-out;
 
+    &.top {
+      z-index: 5;
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    &.bottom {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
 
 }
-.top {
-  z-index: 5;
-  &:hover {
-    opacity: 0;
-  }
-}
 
-.bottom {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 @media screen and (min-width: 1489px) {
   .team-members-el {
