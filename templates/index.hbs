@@ -7,9 +7,10 @@
 {{> header home="true"}}
 
 <main class="landing-container">
-  <section class="landing-banner" title="Empower Youth">
+  <section id="bgtog" class="landing-banner" title="Empower Youth">
     <div class="landing-banner-content">
-      <h1 class="banner-heading">Post Script. Empowered for Change.</h1>
+<!--      <h1 class="banner-heading">Post Script. Empowered for Change.</h1>-->
+        <img class="ps-logo" src="images/PS_logo_Final.png">
 
       <h2 class="banner-subheading">
         The youth are often forgotten as the true movers and shakers. We're bringing everyone together to be reminded of their boldness and sending out a generation of world changers.
@@ -17,8 +18,39 @@
       <button class="landing-banner-button solid-button">
         Learn More
       </button>
+
+            <script type="text/javascript">
+            function bg1tog() {
+                document.getElementById('bgtog').className = "landing-banner"
+            }
+        
+            function bg2tog() {
+                document.getElementById('bgtog').className = "landing-banner-2"
+            }
+            function bg3tog() {
+                document.getElementById('bgtog').className = "landing-banner-3"
+            }
+            function bg4tog() {
+                document.getElementById('bgtog').className = "landing-banner-4"
+            }
+            function bg5tog() {
+                document.getElementById('bgtog').className = "landing-banner-5"
+            }
+            function bg6tog() {
+                document.getElementById('bgtog').className = "landing-banner-6"
+            }
+        
+        </script>
+        
+        <button onclick="bg1tog()">Background 1</button>
+        <button onclick="bg2tog()">Background 2</button>
+        <button onclick="bg3tog()">Background 3</button>
+        <button onclick="bg4tog()">Background 4</button>
+        <button onclick="bg5tog()">Background 5</button>
+        <button onclick="bg6tog()">Background 6</button>
     </div>
   </section>
+    
 
   <section class="section-outer-container light">
     <div class="section-inner-container">

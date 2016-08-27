@@ -1,7 +1,7 @@
 @import 'colors';
 @import 'media';
 
-$banner-tint: rgba($black, .4);
+$banner-tint: rgba($black, .05);
 
 .landing-main {
   width: 100%;
@@ -13,9 +13,70 @@ $banner-tint: rgba($black, .4);
   height: 100vh;
   min-height: 600px;
   // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/main-banner.jpg') center no-repeat;
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg1.jpg') center no-repeat;
   background-size: cover;
 }
+
+
+.landing-banner-2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  // use the gradient hack to tint image
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg2.jpg') center no-repeat;
+  background-size: cover;
+}
+
+
+.landing-banner-3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  // use the gradient hack to tint image
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg3.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.landing-banner-4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  // use the gradient hack to tint image
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg4.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.landing-banner-5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  // use the gradient hack to tint image
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg5.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.landing-banner-6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  // use the gradient hack to tint image
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg6.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.ps-logo {
+    max-width: 750px;
+    width: 80%;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px $grey-2);
+    filter: drop-shadow(5px 5px 5px $grey-2);
+}
+
 
 .landing-banner-content {
   position: absolute;
@@ -28,7 +89,7 @@ $banner-tint: rgba($black, .4);
   .banner-heading,
   .banner-subheading {
     color: $white;
-    text-shadow: 0 0 10px rgba($black, .5);
+    text-shadow: 0 0 10px rgba($black, 1);
     font-family: 'Nothing You Could Do', cursive;
   }
 
