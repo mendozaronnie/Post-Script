@@ -13,59 +13,7 @@ $banner-tint: rgba($black, .05);
   height: 100vh;
   min-height: 600px;
   // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg1.jpg') center no-repeat;
-  background-size: cover;
-}
-
-
-.landing-banner-2 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  // use the gradient hack to tint image
   background: linear-gradient($banner-tint, $banner-tint), url('../images/bg2.jpg') center no-repeat;
-  background-size: cover;
-}
-
-
-.landing-banner-3 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg3.jpg') center no-repeat;
-  background-size: cover;
-}
-
-.landing-banner-4 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg4.jpg') center no-repeat;
-  background-size: cover;
-}
-
-.landing-banner-5 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg5.jpg') center no-repeat;
-  background-size: cover;
-}
-
-.landing-banner-6 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/bg6.jpg') center no-repeat;
   background-size: cover;
 }
 
