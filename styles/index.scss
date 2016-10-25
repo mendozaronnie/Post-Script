@@ -104,6 +104,24 @@ $banner-tint: rgba($black, .05);
 
 ///////////////////OFGM////////////////
 
+.ofgm-title {
+    color: $postscript-1;
+//    text-shadow: 0 0 10px rgba($grey-1, .5);
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Nothing You Could Do', cursive;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      width: 20%;
+      height: 0;
+      border-bottom: 1px solid $white;
+    }
+}
+
 .ofgm-outer-container {
   width: 100%;
   padding: 3em 0;
@@ -116,23 +134,6 @@ $banner-tint: rgba($black, .05);
         margin: 0 auto;
         background-color: $white;
 
-        .ofgm-title {
-            color: $postscript-1;
-        //    text-shadow: 0 0 10px rgba($grey-1, .5);
-            font-weight: bold;
-            font-size: 3em;
-            font-family: 'Nothing You Could Do', cursive;
-            
-            &:after {
-              content: '';
-              position: absolute;
-              bottom: 0;
-              left: 40%;
-              width: 20%;
-              height: 0;
-              border-bottom: 1px solid $white;
-            }
-        }
 
         .ofgm-desc {
 //            display: inline-block;
