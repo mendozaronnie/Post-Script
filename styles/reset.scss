@@ -54,3 +54,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+textarea, input {
+    overflow: auto;
+    height: inherit;
+    line-height: inherit;
+}
