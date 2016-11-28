@@ -105,7 +105,8 @@ $banner-tint: rgba($black, .05);
 ///////////////////OFGM////////////////
 
 .ofgm-title {
-    color: $postscript-1;
+    margin-top: 15px;
+    color: $green-0;
 //    text-shadow: 0 0 10px rgba($grey-1, .5);
     font-weight: bold;
     font-size: 3em;
@@ -114,7 +115,7 @@ $banner-tint: rgba($black, .05);
 }
 .ofgm-sub-title {
     color: $grey-0;
-    margin-top: 5px;
+    margin-top: 10px;
 //    text-align: right;
 }
 
@@ -125,17 +126,21 @@ $banner-tint: rgba($black, .05);
   background-color: lighten($grey-0,35);
     
     .find-more-button {
-        padding: 1em 1.1em;
+        padding: 0.2em 0.3em;
         margin-bottom: 20px;
-//        padding-left: 1.1em;
-//        padding-right: 1.1em;
+        background-color: $green-0;
+        border: 1px solid darken($green-0, 5);
         font-size: 1.5em;
+        
+          &:hover,
+          &:active {
+            background-color: lighten($green-0, 2);
+          }
     }
 
     .ofgm-inner-container {
-        max-width: 960px;
-        padding: 3em;;
-//        max-width: 768px;
+//        max-width: 960px;
+//        padding: 3em;
         margin: 0 auto;
         background-color: $white;
         

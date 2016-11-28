@@ -14,9 +14,15 @@ h3 {
 em {
   font-size: 1.2em;
   font-weight: 700;
+
+  &.green {
+    color: $green-1;
+  }
 }
 
+
 .em-text {
+
 
 }
 
@@ -42,6 +48,7 @@ em {
   &:active {
     background-color: lighten($postscript-1, 2);
   }
+
 }
 
 .section-outer-container {
