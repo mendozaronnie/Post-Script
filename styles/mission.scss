@@ -9,6 +9,13 @@ $banner-tint: rgba($black, .35);
   background: linear-gradient($banner-tint, $banner-tint), url('../images/mission-banner.jpg') center no-repeat;
   background-size: cover;
 }
+.mission-header {
+    margin-bottom: 15px;
+    font-size: 6em;
+    font-family: 'Nothing You Could Do', cursive;
+    color: $white;
+    text-transform: uppercase;
+}
 
 .mission-banner-content-container {
   position: absolute;
@@ -20,7 +27,9 @@ $banner-tint: rgba($black, .35);
   width: 28em;
 //  border: 6px solid rgba($white, .8);
   vertical-align: middle;
+    
 
+    //old styling
   .mission-banner-header-container {
     position: absolute;
     top: 50%;

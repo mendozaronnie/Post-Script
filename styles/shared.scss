@@ -18,13 +18,15 @@ em {
   &.green {
     color: $green-1;
   }
+
+  &.pink {
+    color: $postscript-1;
+    font-size: inherit;
+  }
 }
 
 
-.em-text {
 
-
-}
 
 .clearfix:after {
   content: '';
@@ -93,6 +95,7 @@ em {
     line-height: 1.7;
 
     .section-paragraph {
+       width: 90%;
       margin-top: 30px;
 
       &:first-child {

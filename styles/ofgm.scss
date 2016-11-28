@@ -78,7 +78,7 @@
 
     }
     .ofgm-header-2 {
-        font-family: fantasy;
+        font-family: 'Nothing You Could Do', cursive;
         font-size: 1.9em;
         background-color: rgba(white,.8);
         color: $green-0;
@@ -127,7 +127,9 @@
         }
         .join-caption {
             margin-top: 15px;
-            font-family: "Open Sans";
+            font-family: 'Nothing You Could Do', cursive;
+            font-size: 20px;
+            color: $grey-1;
             transition: font-size 500ms;
         }
         
