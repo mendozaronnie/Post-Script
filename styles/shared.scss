@@ -59,6 +59,7 @@ em {
   background-color: $postscript-1;
 
   .section-inner-container {
+    width: 80%;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -95,7 +96,6 @@ em {
     line-height: 1.7;
 
     .section-paragraph {
-       width: 90%;
       margin-top: 30px;
 
       &:first-child {
