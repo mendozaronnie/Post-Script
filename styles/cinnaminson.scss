@@ -1,0 +1,87 @@
+@import 'colors';
+
+$banner-tint: rgba($black, .35);
+
+.cinna-banner {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  background: linear-gradient($banner-tint, $banner-tint), url('../images/cinna-banner.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.donation-button{
+  position:relative;
+  left: 25%;
+  height: 80px;
+  width: 300px;
+  border-radius: 5px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #202943;
+  color: white;
+}
+
+.cinna-banner-content-container {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 100%;
+  height: 28em;
+  width: 28em;
+  //  border: 6px solid rgba($white, .8);
+  vertical-align: middle;
+
+  .cinna-banner-header-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .cinna-banner-heading,
+  .cinna-banner-subheading {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .cinna-banner-heading {
+    font-size: 2.13em;
+    font-family: 'Nothing You Could Do', cursive;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  .cinna-banner-subheading {
+    color: $postscript-2;
+    text-shadow: 0 0 3px rgba($black, .3);
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 4.38em;
+    position: relative;
+    padding: 30px 0;
+    margin: 30px 0;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 20%;
+      left: 40%;
+      border-bottom: 2px solid $postscript-2;
+      height: 0;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+}
