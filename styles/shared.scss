@@ -14,11 +14,19 @@ h3 {
 em {
   font-size: 1.2em;
   font-weight: 700;
+
+  &.green {
+    color: $green-1;
+  }
+
+  &.pink {
+    color: $postscript-1;
+    font-size: inherit;
+  }
 }
 
-.em-text {
 
-}
+
 
 .clearfix:after {
   content: '';
@@ -42,6 +50,7 @@ em {
   &:active {
     background-color: lighten($postscript-1, 2);
   }
+
 }
 
 .section-outer-container {
@@ -50,6 +59,7 @@ em {
   background-color: $postscript-1;
 
   .section-inner-container {
+    width: 80%;
     max-width: 768px;
     margin: 0 auto;
   }

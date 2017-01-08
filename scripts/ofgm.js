@@ -10,3 +10,7 @@ export default class OFGM {
     this.headerFade.init();
   }
 }
+
+$(document).ready(function() {
+    $('.fancybox').fancybox();
+});

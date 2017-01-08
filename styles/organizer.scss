@@ -87,6 +87,7 @@
     .event-line {
         text-align: left;
         margin-bottom: 10px;
+        white-space: nowrap;
     }
     
     .event-icon {
@@ -97,7 +98,8 @@
         display: inline-block;
         vertical-align: super;
         margin-left: 15px;
-        font-size: 1.2em;
+        font-family: 'Open Sans';
+        font-size: 1.1em;
         text-decoration: underline;
         text-decoration-color: $grey-1;
         text-decoration-style: wavy;

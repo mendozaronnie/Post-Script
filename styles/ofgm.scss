@@ -3,18 +3,39 @@
 
 .ofgm-container {
     box-sizing: border-box;
-    padding: 7em 2em;
+    padding: 7em 0;
     background-color: lighten($postscript-6,40);
-    background-image: url("../images/dark-tl.svg"), url("../images/dark-tr.svg"), url("../images/dark-bl.svg"), url("../images/dark-br.svg");
-    background-position: top left, top right, bottom left, bottom right;
-    background-repeat: no-repeat;
-    background-size: 25em;
+//    background-image: url("../images/dark-tl.svg"), url("../images/dark-tr.svg"), url("../images/dark-bl.svg"), url("../images/dark-br.svg");
+//    background-position: top left, top right, bottom left, bottom right;
+//    background-repeat: no-repeat;
+//    background-size: 25em;
+    
+    .ofgm-banner-section {
+        height: 400px;
+        width: 100%;
+        background-color: lighten($postscript-6,40);
+        background-image: url("../images/dark-tl.svg"), url("../images/dark-tr.svg"), url("../images/dark-bl.svg"), url("../images/dark-br.svg");
+        background-position: top left, top right, bottom left, bottom right;
+        background-repeat: no-repeat;
+        background-size: 25em;
+        
+        .ofgm-banner-pic {
+            height: 100%;
+            width: auto;
+//            background-color: $white;
+            background-image: url(../images/ofgm-banner-2.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size:cover;
+            
+        }
+    }
 
     .ofgm-section {
-        margin-top: 80px;
-        min-height: 650px;
+//        min-height: 650px;
         height: 100%;
         width: 100%;
+        padding: 25px;
         background-color: $white;
         background-image: url(../images/ofgmcrop.png);
         background-repeat: no-repeat;
@@ -23,25 +44,14 @@
         border-radius: 10px;
 
     }
-    
-    .ofgm-box {
-        height: 100%;
-        text-align: center;
-        
-        
-        .ofgm-box-item {
-            background-color:rgba(255,255,255,0.95);
-            margin: 25px;
-//            mid-width: 250px;
-//            max-width:50%;
-            padding: 15px;
-            border: 1px solid black;
-            border-radius: 15px;
 
-        }
-        
+    .ofgm-desc-box {
+        padding: 10px;
+        background-color: rgba(white, .8);
     }
+    
     .ofgm-desc {
+        background-color: white;
         font-family: 'Open Sans';
         font-size: 1.1em;
         font-weight: 200;
@@ -51,39 +61,96 @@
 
     }
     
-    .ofgm-header {
-        margin-top: 30px;
-        padding: 20px;
-//        margin-left: 3em;
-//        color: $postscript-1;
-        width: auto;
-        height: 200px;
+    .ofgm-logo-box {
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(white, .8);
+        text-align: right;
+        
+        .img-box {
+            
+            
+        }
+        
+        .ofgm-thumbnail {
+            display: inline-block;
+            margin: 2px;
+            background-color: $green-0;
+            width: 20px;
+            height: 20px;
+        }
+        
+        
+    }
+    .ofgm-header-pic {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
         text-shadow: 0 0 10px rgba($grey-1, .5);
-//        font-weight: bold;
-//        font-size: 4em;
-//        font-family: 'Nothing You Could Do', cursive;
-
     }
+    
+    
     .ofgm-header-2 {
-        font-family: fantasy;
-        color: $postscript-6;
-    }
-    
-    ///form elements///
-    .ofgm-register {
-        
-    }
-    .hoverable {
-        font-family: "Open Sans";
-        color: lighten($postscript-6,20);
-        
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 3.2em;
+        background-color: rgba(white,.8);
+        color: $green-0;
+        transition: color .2ms, font-size .2s;
+
         &:hover {
-            color: $postscript-4;
-        }
-        &:active {
-          color: $postscript-4;
+            color: $green-1;
+            font-size: 3.4em;
         }
     }
-    
+ 
+    //how to join 
+    .ofgm-how-to-join {
+        min-height: 1000px;
+        
+        .join-list {
+            height: 100%;
+            
+            padding: 25px;
+        }
+        .join-item {
+            margin-top: 15px;
+//            padding: 20px;
+        }
+        .join-figure {
+            width: 100%;
+            opacity: 1;
+            
+            &~not(hover) {
+                opacity: .4;
+            }
+        }
+        .join-img {
+            width: 90%;
+//            max-width: 400px;
+            height: auto;
+            transition: width 500ms;
+            
+            &:hover {
+                width: 100%;
+                
+//                +.join-caption {
+//                    font-size: 1.2em;
+//                }
+            }
+            
+        }
+        .join-caption {
+            margin-top: 15px;
+            font-family: 'Nothing You Could Do', cursive;
+            font-size: 20px;
+            color: $grey-1;
+            transition: font-size 500ms;
+        }
+        
+    }
+}
+
+//typeform//
+#ofgm-typeform {
     
 }
