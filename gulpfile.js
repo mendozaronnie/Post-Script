@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 
 const distDir = './dist/';
+const campaignDir = './dist/campaigns/';
 const cssDir = 'styles';
 const jsDir = 'scripts';
 
@@ -47,6 +48,16 @@ gulp.task('html', () => {
     .pipe(gulp.dest(`${distDir}`));
 });
 
+gulp.task('campaigns', () => {
+    return gulp.src('./templates/campaigns/*.hbs')
+        .pipe(handlebars({}, {
+            batch: ['./templates/partials/'],
+            data: ['./templates/data/']
+        }))
+        .pipe(rename((path) => path.extname = '.html'))
+        .pipe(gulp.dest(`${campaignDir}`));
+});
+
 gulp.task('sass:watch', function() {
   gulp.watch('./styles/**/*.scss', ['sass']);
 });
@@ -59,7 +70,7 @@ gulp.task('js:watch', () => {
   gulp.watch('./scripts/**/*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'html', 'js'], () => {
+gulp.task('default', ['sass', 'html', 'campaigns', 'js'], () => {
 });
 
 gulp.task('watch', ['sass:watch', 'html:watch', 'js:watch'], () => {

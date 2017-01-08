@@ -3,69 +3,76 @@
 {{else}}
   <header class="main-header clearfix">
 {{/if}}
-  <a class="main-logo-link" href="./index.html">
-    <img class="main-logo" src="./images/logo-white.png" alt="Logo">
-  </a>
-  <nav class="main-nav">
-    <ul class="nav-list clearfix">
-      {{#if home}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-      {{/if}}
-      {{#if mission}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">Our Mission</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./mission.html">Our Mission</a>
-        </li>
-      {{/if}}
-      {{#if ofgm}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">OFGM</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./ofgm.html">OFGM</a>
-        </li>
-      {{/if}}
-      {{#if work}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">Our Work</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./work.html">Our Work</a>
-        </li>
-      {{/if}}
-      {{#if team}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">Our Team</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./team.html">Our Team</a>
-        </li>
-      {{/if}}
-      {{#if contact}}
-        <li class="nav-list-el current">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      {{else}}
-        <li class="nav-list-el">
-          <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
-      {{/if}}
-    </ul>
-  </nav>
+{{#if campaign}}
+        <a class="main-logo-link" href="../index.html">
+            <img class="main-logo" src="../images/logo-white.png" alt="Logo">
+        </a>
+{{else}}
+        <a class="main-logo-link" href="./index.html">
+            <img class="main-logo" src="./images/logo-white.png" alt="Logo">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list clearfix">
+                {{#if home}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                {{/if}}
+                {{#if mission}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Our Mission</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./mission.html">Our Mission</a>
+                    </li>
+                {{/if}}
+                {{#if ofgm}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">OFGM</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./ofgm.html">OFGM</a>
+                    </li>
+                {{/if}}
+                {{#if work}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Our Work</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./work.html">Our Work</a>
+                    </li>
+                {{/if}}
+                {{#if team}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Our Team</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./team.html">Our Team</a>
+                    </li>
+                {{/if}}
+                {{#if contact}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                {{/if}}
+            </ul>
+        </nav>
 
-  <button class="hamburger-button">
-    {{> hamburger_icon }}
-  </button>
+        <button class="hamburger-button">
+            {{> hamburger_icon }}
+        </button>
+{{/if}}
+
 </header>
