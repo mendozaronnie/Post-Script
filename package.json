@@ -29,6 +29,7 @@
     "gulp-handlebars": "^4.0.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "vinyl-paths": "^2.1.0"
   }
 }

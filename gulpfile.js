@@ -6,6 +6,8 @@ const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
+const del = require('del');
+const vinylPaths = require('vinyl-paths');
 
 const distDir = './dist/';
 const campaignDir = './dist/campaigns/';
@@ -25,6 +27,7 @@ gulp.task('sass', function() {
 
 gulp.task('imgmin', () =>
     gulp.src('img/*')
+        .pipe(vinylPaths(del))
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
 );
