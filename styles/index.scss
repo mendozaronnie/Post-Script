@@ -13,8 +13,9 @@ $banner-tint: rgba($black, .05);
   height: 100vh;
   min-height: 600px;
   // use the gradient hack to tint image
-  background: linear-gradient($banner-tint, $banner-tint), url('../images/PS-banner-hand.jpg') center no-repeat;
-  background-size: cover;
+    background: url('../images/PS-Heart.png') no-repeat right bottom;
+//  background: linear-gradient($banner-tint, $banner-tint), url('../images/PS-banner-hand.jpg') center no-repeat;
+  background-size: 50%;
 }
 
 .ps-logo-contet {
@@ -22,11 +23,10 @@ $banner-tint: rgba($black, .05);
 }
 
 .ps-logo {
-    max-width: 750px;
-    width: 80%;
-    height: auto;
-    -webkit-filter: drop-shadow(5px 5px 5px $grey-2);
-    filter: drop-shadow(5px 5px 5px $grey-2);
+//    width: 50%;
+    max-height: 175px;
+//    -webkit-filter: drop-shadow(5px 5px 5px $grey-2);
+//    filter: drop-shadow(5px 5px 5px $grey-2);
 }
 
 
@@ -34,14 +34,14 @@ $banner-tint: rgba($black, .05);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
   text-align: center;
 
   .banner-heading,
   .banner-subheading {
-    color: $white;
-    text-shadow: 0 0 10px rgba($black, 1);
+//    color: $white;
+//    text-shadow: 0 0 10px rgba($black, 1);
     font-family: 'Nothing You Could Do', cursive;
   }
 
