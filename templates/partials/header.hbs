@@ -22,6 +22,15 @@
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
                 {{/if}}
+                {{#if about}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                {{/if}}
                 {{#if mission}}
                     <li class="nav-list-el current">
                         <a class="nav-link" href="#">Our Mission</a>
@@ -56,6 +65,15 @@
                 {{else}}
                     <li class="nav-list-el">
                         <a class="nav-link" href="./team.html">Our Team</a>
+                    </li>
+                {{/if}}
+                {{#if press}}
+                    <li class="nav-list-el current">
+                        <a class="nav-link" href="#">Presss Room</a>
+                    </li>
+                {{else}}
+                    <li class="nav-list-el">
+                        <a class="nav-link" href="./pressroom.html">Press Room</a>
                     </li>
                 {{/if}}
                 {{#if contact}}

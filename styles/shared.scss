@@ -1,6 +1,10 @@
 
 @import 'colors';
 
+main {
+  padding-top: 80px;
+}
+
 h1 {
   font-size: 48px;
 }
@@ -25,8 +29,10 @@ em {
   }
 }
 
-
-
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
 
 .clearfix:after {
   content: '';
@@ -51,6 +57,7 @@ em {
     background-color: lighten($postscript-1, 2);
   }
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 }
 
 .section-outer-container {
@@ -122,7 +129,7 @@ em {
   }
 }
 
-/////
+///// beginn flex nonsense
 .container-fluid,
 .container {
   margin-right: auto;
@@ -150,6 +157,9 @@ em {
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem;
+}
+.flex-align-stretch {
+  align-items: stretch;
 }
 
 .row.reverse {
@@ -1083,3 +1093,5 @@ em {
     order: 1;
   }
 }
+
+//end flex nonsense 

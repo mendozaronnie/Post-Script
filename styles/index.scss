@@ -24,6 +24,7 @@ $banner-tint: rgba($black, .05);
 
 .ps-logo {
 //    width: 50%;
+    align-self: center;
     max-height: 175px;
 //    -webkit-filter: drop-shadow(5px 5px 5px $grey-2);
 //    filter: drop-shadow(5px 5px 5px $grey-2);
@@ -52,7 +53,7 @@ $banner-tint: rgba($black, .05);
 
   .banner-subheading {
     line-height: 1.3;
-    width: 60%;
+    width: 100%;
     margin: 100px auto;
     font-size: 2em;
     font-family: 'Nothing You Could Do', cursive;
